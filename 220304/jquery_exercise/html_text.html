@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 인터넷이 안되는 환경일 때는 미리 제이쿼리를 다운받아놓고 같은경로의 폴더에 넣어 사용 -->
+   <script>
+       $(document).ready(function() {
+           $('#bnt1').click(function() {
+                let content = $('#box').text(); //innerText 와 동일
+                alert(content);
+           });
+
+           $('#bnt2').click(function() {
+                let content2 = $('#box').html(); //innerHTML 과 동일
+                alert(content2);
+           });
+       });
+   </script>
+</head>
+<body>
+    <div id="box">
+        <h3>요소 내용 가져오기</h3>
+        <p>text는 요소의 텍스트만 가져오고, html()는 태그도 가져온다.</p>
+    </div>
+    <button id="bnt1">텍스트 가져오기</button>
+    <button id="bnt2">HTML 가져오기</button>
+</body>
+</html>
+
+<!-- html은 위에서부터 찾아서 내려오는데,
+위에서 html을 찾아 실행을 먼저 시켜준다.
+그러므로 스크립트나 함수를 먼저 실행되게 
+window.onload를 쓰거나 defer를 쓰거나,
+스크립트를 html밑으로 내리거나 해주는 것이다. 
+$(document).ready(function(){})에
+먹이면 위에서도 실행된다.-->

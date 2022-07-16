@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                $("#show").text("스크롤 바가 이동되었어요!");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div style="width:2500px; overflow:auto; background-color:yellow">
+        희망은 가난한 사람의 빵이다.<br>
+        말 없는 발이 천리간다.<br>
+        피는 물보다 진하다.
+    </div>   
+
+    <!-- 화면 출력 위치 -->
+    <p id="show"></p> 
+</body>
+</html>

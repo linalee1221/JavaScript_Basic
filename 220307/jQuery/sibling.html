@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("h3").siblings().css("background-color", "pink");
+        });
+    </script>
+
+</head>
+<body>
+    <h2>siblings() 메소드</h2>
+    <p>타인</p>
+    <div>
+        <p>형제 1</p>
+        <span>형제 2</span>
+        <h3>나</h3>
+        <h4>형제 3</h4>
+        <p>형제 4</p>
+    </div>
+</body>
+</html>

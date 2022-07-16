@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 객체 선언
+        const data = [{
+            name: "혼자 공부하는 파이썬",
+            price: 18000,
+            publisher: "한빛미디어"
+        }, {
+            name: "HTML5 웹 프로그래밍 입문",
+            price: 26000,
+            publisher: "한빛아카데미"
+        }];
+
+        // 문자열로 변환된 객체 출력
+        let js = JSON.stringify(data);
+        // 그냥 객체 출력
+        console.log(js);
+        // 객체 -> 문자열 : json
+        console.log(JSON.parse(js));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

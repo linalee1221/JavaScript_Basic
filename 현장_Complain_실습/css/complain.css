@@ -1,0 +1,25 @@
+/* #imagebad {
+    background-color: gray;
+}
+
+#tablebad {
+    background-color: gray;
+}
+
+#loginbad {
+    background-color: gray;
+} */
+
+/* 선생님이 푼거 */
+
+tr:nth-child(2n) {
+    background-color: white;
+}
+tr:nth-child(2n+1) {
+    background-color: lightgrey;
+}
+th {
+    background-color: lightblue;
+}
+
+

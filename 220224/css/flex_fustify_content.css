@@ -1,0 +1,43 @@
+.container {
+    width: 700px;
+    display: flex;
+    background-color: #eee;
+    border: 1px solid #222;
+    margin-bottom: 30px;
+}
+
+.box {
+    padding: 5px 45px;
+    margin: 5px;
+    width: 80px;
+    background-color: #222;
+}
+
+#opt1 {
+    /* justify-content: flex-start; 주축 시작점 기준으로 배치 */
+    flex-direction: row; /* 왼쪽부터 오른쪽으로 */
+}
+
+#opt2 {
+    /* justify-content: flex-end; 주축 끝점 기준으로 배치 */
+    flex-direction: row-reverse; /* 오른쪽에서 왼쪽으로 */
+}
+
+#opt3 {
+    /* justify-content: center; 주축 중앙 기준으로 배치 */
+    flex-direction: column; /* 위에서 아래로 배치 */
+}
+
+#opt4 {
+    /* justify-content: space-between; 시작점과 끝점 배치 후 항목은 같은 간격으로 배치 */
+    flex-direction: column-reverse; /* 아래에서 위로 배치 */
+}
+
+/* #opt5 {
+    justify-content: space-around; /* 전체 항목을 같은 간격으로 배치 */
+
+
+p {
+    color: #fff;
+    text-align: center;
+}

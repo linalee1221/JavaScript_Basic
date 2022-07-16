@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '맑은 고딕';
+}
+
+html, body {
+    width: 900px;
+    height: 500px;
+}
+
+body {
+    background-color: lightgray;
+    position: relative;
+}
+
+#page-wrapper {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50% -50%); */
+    /* transform: translate(); */
+    background: white;
+    border-radius: 5px;
+    width: 900px;
+    margin-left: 350px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 600px;
+}
+
+th, tr, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}

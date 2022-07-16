@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script>
+        $(function() {
+            $("#menu").menu();
+        });
+    </script>
+
+    <style>
+        .ui-menu {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+        <ul id="menu">
+            <!-- 대메뉴 #1 시작 -->
+            <li class="ui-state-disabled"><div>웹 관련 용어</div></li>
+            <li><div>웹 기획</div></li>
+            <li><div>웹 디자인</div>
+                <ul>
+                    <!-- 중메뉴 -->
+                    <li><div>포토샵</div></li>
+                    <li><div>일러스트레이터</div></li>
+                </ul>
+            </li>
+            <!-- 대메뉴 #1 끝 -->
+
+            <!-- 대메뉴 #2 시작-->
+            <li><div>웹 프로그래밍</div>
+            <ul>
+                <!-- 중메뉴 -->
+                <li class="ui-state-disabled"><div>리액트</div></li>
+                <li><div>자바스크립트</div></li>
+                <li><div>제이쿼리</div>
+                    <ul>
+                        <!-- 소메뉴 -->
+                        <li>
+                            <div>제이쿼리란?</div>
+                        </li>
+                        <li>
+                            <div>제이쿼리 선택자</div>
+                        </li>
+                        <li>
+                            <div>제이쿼리 위젯</div>
+                        </li>
+                    </ul>
+                </li>
+                <li><div>PHP</div></li>
+            </ul>
+        </li>
+        <li class="ui-state-disabled"><div>웹 퍼블리싱</div></li>
+        <!-- 대메뉴 #2 끝 -->
+    </ul>
+</body>
+</html>

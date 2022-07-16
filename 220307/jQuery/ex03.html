@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jQuery/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(function() {
+            $('#menu>li:even').css("background-color", "#ff0");
+            $('#menu>li:odd').css("background-color", "#0ff");
+        });
+    </script>
+</head>
+<body>
+
+    <!-- 연습문제 03 -->
+    <!-- 아래 메뉴에서 홀수는 배경색을 #ff0 -->
+    <!-- 아래 메뉴에서 짝수는 배경색을 #0ff -->
+
+    <h1>탐색 선택자</h1>
+    <ul id="menu">
+        <li>내용 1</li>
+        <li>내용 2</li>
+        <li>내용 3</li>
+        <li>내용 4</li>
+    </ul>
+</body>
+</html>

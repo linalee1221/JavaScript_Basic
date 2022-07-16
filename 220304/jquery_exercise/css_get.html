@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('#btn').click(function() {
+                let color = $('h2').css("background-color");
+                let size = $('h2').css("font-size");
+                alert(color + "\n" + size);
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2 style="background-color:yellow; font-size:30px;">제목</h2>
+
+    <button id="btn">CSS 정보 가져오기</button>
+</body>
+</html>

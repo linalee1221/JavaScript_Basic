@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function() {
+            // keydown 이벤트
+            $("p:eq(0) input").keydown(function() {
+                $(this).css("background-color", "yellow");
+            });
+
+            // keyup 이벤트
+            $("p:eq(0) input").keyup(function() {
+                $(this).css("background-color", "pink");
+            });
+
+            // keypress 이벤트
+            $("p:eq(1) input").keypress(function() {
+                $(this).css("background-color", "skyblue");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>- 아이디 : <input type="text"></p>
+    <p>- 비밀번호 : <input type="password"></p>
+</body>
+</html>

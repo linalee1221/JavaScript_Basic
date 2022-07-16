@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/commons_flex_semantic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/section.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        
+        <!-- 머리말 레이아웃 -->
+        <header id="main-header">
+            <h1> 환영합니다. </h1>
+        </header>
+        
+        <!-- 메뉴 레이아웃 -->
+        <nav id="main-navigation">
+            <!-- 메뉴 공간 -->
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                
+                </ul>
+            </div>
+            <!-- 검색 엔진 -->
+            <div class="pull-right">
+                <div class="search-bar">
+                    <input type="text" class="input-search">
+                    <input type="submit" class="input-search-submit" value="검색">
+                </div>
+            </div>
+        </nav>
+
+        <div id="content">
+            <!-- 본문 단원 -->
+            <section id="main-section">
+                <!-- 첫번째 기사 -->
+                <article>
+
+                    <!-- 기사 제목 -->
+                    <div class="article-header">
+                        <p>본문1</p>
+                    </div>
+
+                    <!-- 기사 본문 -->
+                    <div class="article-body">
+                        <p>본문내용1</p>
+                        <table>
+                            <tr>
+                                <th>no</th>
+                                <th>제목</th>
+                                <th>내용</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>회원</td>
+                                <td>회원취미</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- 두번째 기사 -->
+                <article>
+
+                    <!-- 기사 제목 -->
+                    <div class="article-header">
+                        <p>본문1</p>
+                    </div>
+
+                    <!-- 기사 본문 -->
+                    <div class="article-body">
+                        <p>본문내용1</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 소메뉴 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <div class="aside-list-item">
+                    <ul>
+                        <li>네이버</li>
+                        <li>구글</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="aside-list-item">
+                    <ul>
+                        <li>유튜브</li>
+                        <li>인스타</li>
+                    </ul>
+                </div>
+            </aside>          
+        </div>
+        <!-- 꼬리말 -->
+        <footer id="main-footer">
+            <a href="#">Created By Team-HeXagon, Lee Eun Song</a>
+        </footer> 
+    </div>
+</body>
+</html>

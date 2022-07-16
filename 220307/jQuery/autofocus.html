@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        window.onload = function() {
+            let input_1 = document.querySelectorAll('input')[0];
+            let input_2 = document.querySelectorAll('input')[1];
+        }
+
+        //input_1
+        input_1.onkeydown = function() {
+            // 글자 개수가 6개 이상일 때
+            if(6<=input_1.value.length) {
+                // input_2 문서 객체로 포커스를 이동
+                input_2.focus();
+            }
+        };
+
+        //input_2
+        input_2.onkeydown = function(event) {
+            //이벤트 객체 추출
+            let event = event || window.event;
+            //사용자의 입력이 '백 스페이스'고 입력된 글자가 없을 때
+            if(event.keyCode == 8 && input_2.value.length == 0) {
+                input_1.focus();
+            }
+        };
+    </script>
+</head>
+<body>
+    <input type="text" maxlength="6">
+    <span>-</span>
+    <input type="text" maxlength="7">
+</body>
+</html>

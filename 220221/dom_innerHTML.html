@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn"></div>
+    
+    <script>
+        let show = prompt("글쓰기 버튼을 보여줄까요?");
+        if(show == "y") {
+            document.getElementById('btn').innerHTML = "<input type='button' value='글쓰기'>"
+        } else {
+            document.getElementById('btn').innerHTML = "<input type='button' value='글수정'>"
+        }
+    </script>
+    <!-- <h2>글 제목</h2>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("result").innerHTML = "안녕하세요";
+        document.getElementById("result").style.color = "red";
+    </script> -->
+</body>
+</html>

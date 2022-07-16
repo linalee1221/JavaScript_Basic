@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <link rel="stylesheet" href="css/querySelector_time.css">
+</head>
+<body>
+    <div id="container">
+        <!-- 글 중간에 출력 -->
+        <p>현재 시각<span id="current" class="display"></span></p>
+    </div>
+
+    <script>
+        setInterval(displayNow, 1000); // 1초마다 displayNow함수를 실행
+
+        function displayNow() {
+            // 현재 시간 불러오는 클래스
+            let now = new Date();
+
+            // 현재 대한민국에서 쓰는 시간을 저장
+            let currentTime = now.toLocaleTimeString();
+            document.querySelector('#current').innerHTML = currentTime;
+        }
+    </script>
+</body>
+</html>

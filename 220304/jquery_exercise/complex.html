@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            //이벤트 설정
+            $('#btn1').click(function() {
+                $('#p1').text("안녕하세요");
+            });
+            $('#btn2').click(function() {
+                $('#p2').text("<h3>안녕하세요</h3>");
+            });
+            $('#btn3').click(function() {
+                $('#p3').html("<span style='color:green;'>반갑습니다.</span>");
+            });
+            $('#btn4').click(function() {
+                $('#phone').val("010-1234-5678");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 화면 출력 위치 -->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p>전화번호 : <input type="text" id="phone"></p>
+
+    <button id="btn1">텍스트 설정하기-1</button>
+    <button id="btn2">텍스트 설정하기-2</button>
+    <button id="btn3">HTML 설정하기</button>
+    <button id="btn4">입력 창에 값 설정하기</button>
+</body>
+</html>

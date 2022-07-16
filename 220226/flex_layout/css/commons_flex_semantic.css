@@ -1,0 +1,44 @@
+/* 페이지 초기화 부분 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '맑은 고딕', 'Malgun Gothic', Gothic, Sans-serif;
+}
+
+html, body {
+    width: 100%;
+   
+}
+
+body {
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+table{
+    border-collapse: collapse;
+    width: 550px;
+}
+
+th, tr, td {
+   border: 1px solid black;
+   padding: 8px;
+   text-align: center;
+}
+
+#page-wrapper {
+    background: white;
+    width: 900px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}

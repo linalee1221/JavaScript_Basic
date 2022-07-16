@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Basic</title>
+    <script src="/js/querySelector_bgcolor.js"></script>
+    <link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+    <button id="change">글자색바꾸기</button>
+    <p>!!!4주년 기념 커스터마이징 자랑대회!!!</p>
+
+    <script>
+        // let changeBttn = document.querySelector('#change');
+        // changeBttn.onclick = changeColor;
+        // changeBttn.onclick = changeColor;
+
+
+        // function changeColor() {
+        //     document.querySelector('p').style.color = "#f00";
+        // }
+
+
+        let changeBttn = document.querySelector('#change');
+        changeBttn.onclick = function() {
+            document.querySelector('p').style.color = "#f00";
+        };
+
+        // 밑은 좀 더 축약한 형태!
+
+        
+    </script>
+</body>
+</html>

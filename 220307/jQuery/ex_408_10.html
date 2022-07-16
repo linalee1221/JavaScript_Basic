@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div>클릭</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    <script>
+        let colors = ["red","green","blue"];
+        let = currentColor = 0;
+        $("div").css({
+            backgroundColor: colors[currentColor]
+        }).click(function() {
+            $(this).css({
+                backgroundColor: colors[currentColor++]});
+            currentColor %= 3;
+        });
+    </script>
+
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>버튼</div>
+</body>
+</html>

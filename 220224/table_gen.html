@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            width: 30px;
+            height: 20px;
+            text-align: center;
+        }
+        button {
+            margin-left: 10px;
+        }
+        table {
+            width: 300px;
+        }
+        table, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="rCount" value="1">행
+        <input type="text" id="cCount" value="1">열
+        <button onclick="drawTable(); return false;">작성</button>
+    </form>
+    <!-- 생성된 테이블 출력 위치 -->
+    <div id="contents"></div>
+    <script>
+        function drawTable() {
+            let rCount = document.querySelector('#rCount').value;
+            let cCount = document.querySelector('#cCount').value;
+
+            let newTable = document.createElement('table');
+
+            for(let i=0; i<rCount; i++) {
+                let newRow = document.createElement('tr');
+
+                for(let j=0; j<cCount; j++) {
+                    let newCell = document.createElement('td');
+                    let cellText = document.createTextNode(i+","+j);
+                    newCell.appendChild(cellText);
+                    newRow.appendChild(newCell);
+                }
+                newTable.appendChild(newRow);
+            }
+            // 테이블 출력 위치
+            let contents = document.querySelector('#contents');
+            contents.appendChild(newTable);
+        }
+    </script>
+</body>
+</html>

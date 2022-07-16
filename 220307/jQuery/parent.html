@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("span").parent().css("border", "2px solid green");
+            $("li").parent().css("border", "2px solid blue");
+            $("ul").parent().css("border", "2px solid red");
+        })
+    </script>
+
+</head>
+<body>
+    <h2>parent() 메서드</h2>
+    <div>
+        <ul>
+            <li>항목 1</li>
+            <li><span>항목 2(span 요소)</span></li>
+        </ul>
+        <ul>
+            <li>항목 1</li>
+            <li>항목 2</li>
+        </ul>
+    </div>
+</body>
+</html>

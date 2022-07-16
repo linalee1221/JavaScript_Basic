@@ -1,0 +1,43 @@
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+#main-navigation {
+    height: 30px;
+}
+
+.menu-title {
+    float: left;
+    font-size: medium;
+}
+
+.menu-title > a {
+    padding: 0px 30px;
+}
+
+.menu-title > a:hover {
+    background-color: black;
+    color: white;
+    padding: 0px 30px;
+}
+
+.search-bar {
+    width: 230px;
+}
+
+.input-search {
+    float: left;
+    height: 23px;
+    width: 120px;
+    margin-right: 3px;
+}
+
+.input-search-submit {
+    float: left;
+    height: 25px;
+    font-size: 15px;
+}

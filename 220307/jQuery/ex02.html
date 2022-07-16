@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        // 아래:$(function() {}) -> window.onload, defer와 동일
+        // HTML보다 Javascript 실행을 뒤로 돌리는 메소드 :
+        // 1. HTML 먼저 실행
+        // 2. 그 후에 Javascript가 실행
+        $(function() {
+            $('#btn').click(function() {
+                // $('#show').text('안녕하세요.');
+                $('#show').html("안녕하세요.");
+                // 둘중에 하나 하면 돼요~
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <!-- 연습문제 01
+    버튼을 클릭하면 아래 출력 위치에 안녕하세요 라고 출력해 보세요. -->
+    <button id="btn">클릭!</button>
+    <!-- 화면 출력 위치 -->
+    <p id="show"></p>
+</body>
+</html>

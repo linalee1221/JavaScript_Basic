@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(function() {
+            // $(".accordion > dd").hide(); 이렇게 해도 되고
+            let allPanels = $(".accordion > dd"); // 변수에 넣어도 됨.
+            allPanels.hide(); // 변수에 넣고 호출하는 방식으로 해도 됨.
+
+            $(".accordion > dt > a").click(function() {
+                // 미리 열려있는 목록을 올려주기 위해서 slideUp을 먼저 넣는다.
+                allPanels.slideUp();
+                $(this).parent().next().slideDown();
+            });
+        });
+    </script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .accordion {
+            margin: 30px;
+        }
+        .accordion dt, .accordion dd {
+            padding: 10px;
+            border: 1px solid #cccccc;
+        }
+        /* dt요소중 가장 마지막에 있는 요소 선택 */
+        .accordion dt:last-of-type, .accordion dd:last-of-type {
+            border-bottom: 1px solid #cccccc;
+        }
+        .accordion dt a {
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+        .accordion dd {
+            border-top: 0;
+            font-size: 14px;
+            line-height: 150%; /*줄과 줄 사이의 간격*/
+        }
+    </style>
+
+</head>
+<body>
+    <dl class="accordion">
+        <dt><a href="#">웹이란?</a></dt>
+        <dd>웹은 'World Wide Web'의 약자로서 간단하게 WWW로 표현된다.
+            웹이란 인터넷에 연결된 컴퓨터를 통해 전세계 사람들이 정보를
+            제공하고 공유할 수 있는 사이버 공간이다.
+        </dd>
+        <dt><a href="#">웹 브라우저</a></dt>
+        <dd>웹은 'World Wide Web'의 약자로서 간단하게 WWW로 표현된다.
+            웹이란 인터넷에 연결된 컴퓨터를 통해 전세계 사람들이 정보를
+            제공하고 공유할 수 있는 사이버 공간이다.
+        </dd>
+        <dt><a href="#">웹 호스팅</a></dt>
+        <dd>웹은 'World Wide Web'의 약자로서 간단하게 WWW로 표현된다.
+            웹이란 인터넷에 연결된 컴퓨터를 통해 전세계 사람들이 정보를
+            제공하고 공유할 수 있는 사이버 공간이다.
+        </dd>
+    </dl>
+</body>
+</html>

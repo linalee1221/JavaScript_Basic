@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    연습문제 5
+    <script>
+        $(function() {
+            $('#btn').click(function() {
+                $('.red').css('color', 'red');
+                $('.red').css('font-weight', 'bold');
+            });
+
+        });  
+    </script>
+
+
+    <!-- 연습문제 4
+    <script>
+       $(function() {
+            $('#btn').click(function() {
+                $('#title').css('border', 'solid 5px skyblue');
+                $('#title').css('padding', '10px');
+            });
+    
+        });        
+    </script> -->
+
+
+    <!-- 연습문제 3
+    <script>
+        $(function() {
+            $('#btn').click(function() {
+                $('p').css('background-color', 'yellow');
+            });
+    
+        });
+    </script> -->
+
+</head>
+<body>
+
+    <!-- 연습문제 3
+    jquery를 이용해서 버튼을 클릭하면
+    p를 선택해서 백그라운드 속성을 노란색으로 만들어주세요. -->
+
+    <!-- 연습문제 4
+    jQuery를 이용해서 버튼을 클릭하면
+    title을 선택해서 border -> solid 5px skyblue로 만들고
+    title을 선택해서 padding -> 10px 만들어주세요. -->
+
+    <!-- <h2 id="title">아이디 선택자</h2>
+    <p>아이디 선택자는 요소의 id 속성 값으로 해당 요소를 선택한다.</p>
+    <ul>
+        <li>항목 1</li>
+        <li>항목 2</li>
+    </ul> -->
+
+    <!-- 연습문제 5
+    jQuery를 이용해서 버튼을 클릭하면
+    클래스 red 선택해서 color -> red를 만들고
+    클래스 red 선택해서 font-weight -> bold로 바꾸기 -->
+    <h2>클래스 선택자</h2>
+    <p> 클래스 선택자는 요소의 <span class="red">class 속성 값</span>으로
+        해당 요소를 선택한다.</p>
+    <ul>
+        <li>항목1</li>
+        <li class="red">항목2</li>
+        <li>항목3</li>
+        <li class="red">항목4</li>
+    </ul>
+    <button id="btn">버튼</button>
+</body>
+</html>

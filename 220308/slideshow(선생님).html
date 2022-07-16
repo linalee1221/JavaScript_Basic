@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(function() {
+            let slideCount = $("#slider ul li").length;
+            let slideWidth = $("#slider ul li").width();
+            let slideHeight = $("#slider ul li").height();
+            let slideTotalWidth = slideCount * slideWidth;
+
+            $("#slider").css({ width: slideWidth, height: slideHeight });
+            $("#slider ul").css({ width: slideTotalWidth, marginLeft: -slideWidth });
+            $("#slider ul li:last-child").prependTo("#slider ul");
+
+            function moveLeft() {
+                $("#slider ul").animate({
+                    left: +slideWidth
+                }, 300, function() {
+                    $("#slider ul li:last-child").prependTo("#slider ul");
+                    $("#slider ul").css("left", "0");
+                })
+            }
+
+            function moveRight() {
+                $("#slider ul").animate({
+                    left: -slideWidth
+                }, 300, function() {
+                    $("#slider ul li:first-child").appendTo("#slider ul");
+                    $("#slider ul").css("left", "0");
+                })
+            }
+
+            $("a.prev").click(function() {
+                moveLeft();
+            });
+
+            $("a.next").click(function() {
+                moveRight();
+            });
+        });
+    </script>
+    <style>
+        /* 초기화 */
+        * {
+            margin:0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+        #slider {
+            position: relative;
+            overflow: hidden;
+            margin: 50px auto 0 auto
+        }
+        #slider ul {
+            position: relative;
+        }
+        #slider ul li {
+            position: relative;
+            width: 800px;
+            height: 533px;
+            float:left;
+        }
+        a.prev, a.next {
+            position: absolute;
+            top: 40%;
+            z-index: 999;
+            display: block;
+            padding: 4% 3%;
+            background: #333333;
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        a.next {
+            right:0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="slider">
+        <a href="#" class="next">>></a>
+        <a href="#" class="prev"><<</a>
+        <ul>
+            <li><img src="img/image1.jpg"></li>
+            <li><img src="img/image2.jpg"></li>
+            <li><img src="img/image3.jpg"></li>
+            <li><img src="img/image4.jpg"></li>
+            <li><img src="img/image5.jpg"></li>
+        </ul>
+    </div>
+</body>
+</html>

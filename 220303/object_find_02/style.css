@@ -1,0 +1,13 @@
+.search-word-wrapper {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    color: #fff;
+}
+
+#search-result {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 60px;
+}

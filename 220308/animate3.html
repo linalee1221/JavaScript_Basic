@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <script>
+
+        $(function() {
+            $("#btn1").click(function() {
+                $("div").animate({width: "300px"}, 3000);
+                $("div").animate({height: "300px"}, 3000);
+            });
+            
+            $("#btn2").click(function() {
+                $("div").stop();
+            });
+        });
+
+    </script>
+
+    <style>
+        div {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+        <button id="btn1">Animation</button>
+        <button id="btn2">Stop</button>
+    </p>
+    <!-- 화면 조작 위치 -->
+    <div></div>
+</body>
+</html>

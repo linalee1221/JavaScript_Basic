@@ -1,0 +1,44 @@
+#content {
+    margin-left: 20px;
+    font-size: small;
+    height: 700px;
+}
+
+#main-section {
+    width: 650px;
+    float: left;
+}
+
+.article-header {
+    font-size: small;
+}
+
+.article-body {
+    font-size: xx-small;
+    margin-left: 5px;
+}
+
+.article-body img {
+    float: left;
+    height: 110px;
+    margin: 5px 10px;
+}
+
+#main-aside {
+    width: 230px;
+    float: right;
+}
+
+.aside-list {
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.aside-list-item {
+    margin: 5px;
+}
+
+#main-footer {
+    font-size: x-small;
+    margin: 10px 20px;
+}

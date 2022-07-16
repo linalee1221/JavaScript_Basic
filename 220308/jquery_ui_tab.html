@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script>
+        $(function() {
+            $("#tab_button").tabs();
+        });
+    </script>
+ 
+
+</head>
+<body>
+
+    <div id="tab_button">
+        <ul>
+            <li><a href="#tabs-1">웹이란?</a></li>
+            <li><a href="#tabs-2">웹 브라우저</a></li>
+            <li><a href="#tabs-3">웹 호스팅</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p> 웹은 'World Wide Web'의 약자로서 간단하게 WWW로 표현된다.
+                웹이란 인터넷에 연결된 컴퓨터를 통해 전세계 사람들이 정보를
+                제공하고 공유할 수 있는 사이버 공간이다.
+            </p>
+        </div>
+        <div id="tabs-2">
+            <p> 웹이란 인터넷에 연결된 컴퓨터를 통해 전세계 사람들이 정보를
+                제공하고 공유할 수 있는 사이버 공간이다.
+            </p>
+        </div>
+        <div id="tabs-3">
+            <p> 전세계 사람들이 정보를
+                제공하고 공유할 수 있는 사이버 공간이다.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

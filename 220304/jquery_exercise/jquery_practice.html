@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <!-- 내 풀이
+    <script>
+        $(function() {
+            $('#btn').click(function() {
+                $('*').attr('style', 'border: 1px solid blue');
+            });
+    
+        });
+    </script> -->
+
+    <!-- 선생님 풀이 -->
+    <script>
+         $(function() {
+            $('#btn').click(function() {
+                $('*').css("border", "1px solid blue");
+            });
+    
+        });       
+    </script>
+
+
+    <!-- 연습문제 1 풀이
+    <script>
+        $(function() {
+            $('#btn').click(function() {
+                $('h2').addClass("yellow");
+            });
+            
+        });
+     </script>
+     <style>
+         .yellow {
+             background-color: yellow;
+             color: black;
+         }
+       
+     </style> -->
+
+</head>
+<body>
+    <!-- 연습문제 1
+    jQuery를 이용해서 버튼을 클릭하면
+    h2태그의 백그라운드 컬러를 노란색으로 설정해주세요. -->
+    
+    <!-- <h2>제목 1</h2>
+    <h2>제목 2</h2>
+    <button id="btn">CSS 설정하기</button> -->
+
+
+    <!-- 연습문제 2
+    jQuery를 이용해서 버튼을 클릭하면
+    페이지 전체에 border 1px solid blue 만들기 -->
+    <h2>전체 선택자</h2>
+    <p>전체 선택자 *는 페이지의 모든 요소를 선택한다.</p>
+    <ul>
+        <li>항목 1</li>
+        <li>항목 2</li>
+    </ul>
+
+    <button id="btn">체인지</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.card {
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 자바스크립트에서 card 클래스를
+동적으로 만들어진다고 가정하고 
+미리 스타일을 적용해둔것이다. */
+.card h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+}

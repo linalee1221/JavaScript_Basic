@@ -1,0 +1,4 @@
+#main-header { /* 마진 앞이 상하, 뒤가 좌우 */
+    margin: 10px 20px;
+    font-size: medium;
+}

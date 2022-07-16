@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script>
+        $(function() {
+            $("#box textarea").resizable();
+        });
+    </script>
+    <!-- 상기 스크립트 안 걸어도 리사이징이 되기는 한다. -->
+
+</head>
+<body>
+    
+    <h2>글쓰기</h2>
+    <div id="box">
+        <textarea rows="5" cols="40"></textarea>
+    </div>
+
+</body>
+</html>

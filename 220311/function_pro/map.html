@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // map #1
+        // 주어진 값들을 오름차순으로 접근해서 새로운 값을 만들고 반환(return)
+        // 리턴값이 있음
+
+        // let numbers = [1,2,3,4,5];
+        // let result = numbers.map(number => number * number);
+
+        // 아래for문을 짧게 축약한게 상기 코드임
+        
+        // let result = [];
+        // for(let i=0; i<numbers.length; i++) {
+        //     result[i] = numbers[i] * numbers[i];
+        // }
+
+        // console.log(numbers);
+        // console.log(result);
+
+        // map #2
+        // 매개 변수를 자바스크립트 내장함수로 넘겨서 새로운 배열 구하기
+        // let numbers = [1,2,3,4,5];
+        // let squares = numbers.map(Math.sqrt);
+
+        // console.log(squares);
+
+        // map #3
+        // 객체 조작
+        // let users = [{
+        //     name: "YD",
+        //     age: 22
+        // }, {
+        //     name: "Bill",
+        //     age: 32
+        // }, {
+        //     name: "Andy",
+        //     age: 21
+        // }, {
+        //     name: "Roky",
+        //     age: 35
+        // }];
+
+        // let ages = [];
+        // ages = users.map(function(user) {
+        //     return user.age
+        // });
+        // //객체 속성 중에서 나이만 뽑은 새로운 배열을 만들어 출력
+        // console.log(ages);
+
+        // //화살표함수로 바꾸기
+        // ages = users.map((user) => user.age);
+
+        // 연습문제 #1
+        // 아래 형태를 map을 사용하는 형태로 출력하세요
+        // let numbers = [1,2,3];
+        // let result = [];
+
+        // for(i=0; i<numbers.length; i++) {
+        //     result.push(numbers[i] + numbers[i]);
+        // }
+
+        // console.log(result);
+
+    //    result = numbers.map(function(value) {
+    //        return value + value;
+    //    });
+    //    console.log(result);
+
+
+       // 연습문제 #2
+       // 아래 형태를 map을 사용하는 형태로 출력하세요
+    //    let numbers = ["가","나","다"];
+    //    let result = [];
+
+    //    for(let i=0; i<numbers.length; i++) {
+    //        result[i] = numbers[i] + " 붙임";
+    //    }
+
+    //    console.log(result);
+
+       // map의 형태로 바꾸기
+
+    //    result = numbers.map(function(value) {
+    //        return value + " 붙임";
+    //    });
+    //    console.log(result);
+    
+       // 연습문제 #3
+       // 아래 형태를 map을 사용해서 이름만 가지고 있는 배열을
+       // 새로 만들어서 출력하세요.
+       let members = [
+          {name: "YD", age:22},
+          {name: "Bill", age:32},
+          {name: "Andy", age:21},
+          {name: "Roky", age:35},
+       ];
+       let names = [];
+
+       names = members.map(function(user) {
+           return user.name
+       });
+
+        console.log(names);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

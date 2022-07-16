@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 인터넷이 안되는 환경일 때는 미리 제이쿼리를 다운받아놓고 같은경로의 폴더에 넣어 사용 -->
+</head>
+<body>
+   <p>단락입니다.</p>
+   <button>배경 색상 변경하기</button>
+
+   <script>
+       $('button').click(function() {
+           $('p').css("background-color", "yellow");
+       })
+   </script>
+</body>
+</html>

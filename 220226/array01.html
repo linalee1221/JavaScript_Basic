@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>배열의 각 요소</h1> -->
+    <script>
+        // let season = ["봄", "여름", "가을", "겨울"];
+
+        // for(let i=0; i<season.length; i++) {
+        //     document.write(season[i] + " ");
+        // }
+        // let numbers = ["one", "two", "three", "four"];
+
+        // for(let i=0; i<numbers.length; i++) {
+        //     document.write("<p>" + numbers[i] + "</p>");
+        // }
+    </script>
+    <h1>Slice 메소드 사용하기</h1>
+    <script>
+        let colors = ["red", "green", "blue", "white", "black"];
+        let colors2 = colors.slice(2); // blue, white, black이라는 인덱스가 들어있다.
+
+        document.write(colors2);
+        document.write("<br>");
+
+        let colors3 = colors.slice(2,4); // blue, white라는 인덱스가 들어있다.
+        document.write(colors3);
+
+    </script>
+</body>
+</html>

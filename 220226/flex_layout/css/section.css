@@ -1,0 +1,35 @@
+#content {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#main-section {
+    width: 640px;
+    margin: 5px 20px;
+ 
+}
+
+.article-header {
+    font-size: 20px;
+}
+
+.article-body {
+    margin: 5px 10px;
+    font-size: 15px;
+}
+
+#main-aside {
+    margin-left: auto;
+    width: 261px;
+    margin-top: 10px;
+}
+
+.aside-list-item {
+    margin: 10px 0;
+}
+
+#main-footer {
+    font-size: 13px;
+    margin: 10px 20px;
+}

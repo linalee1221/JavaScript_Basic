@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+}
+tr, td {
+    border: 1px solid lightblue;
+    padding: 3px;
+}
+ul {
+    list-style-type: square;
+}

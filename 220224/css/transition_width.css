@@ -1,0 +1,14 @@
+.box {
+    margin: 200px auto;
+    width: 100px;
+    height: 100px;
+    background-color: #07f;
+    border: 1px solid #222;
+    transition-property: width, height; /* 애니메이션 대상이 가로, 세로 */
+    transition-duration: 2s, 1s; /* 애니메이션 시간 2초, 1초 */
+}
+
+.box:hover {
+    width: 200px;
+    height: 120px;
+}

@@ -1,0 +1,18 @@
+#container {
+    width: 200px;
+    margin: 30px auto;
+}
+
+img {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px 2px #000;
+    animation: rotateStudent 2.5s infinite; /* rotateStudent를 2.5초 실행 무한 반복 */
+
+}
+
+@keyframes rotateStudent {
+    from { transform: perspective(200px) rotateY(0deg);}
+    50% { transform: perspective(200px) rotateY(-180deg);}
+    to { transform: perspective(200px) rotateY(-360deg);}
+}
